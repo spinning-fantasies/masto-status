@@ -11,6 +11,7 @@ print
 jsondata=json.loads(req.text)
 users=jsondata['stats']['user_count']
 posts=jsondata['stats']['status_count']
+domains=jsondata['stats']['domain_count']
 
 instance = requests.get("https://3615.computer/api/v2/instance")  # change the url
 jsoninst = json.loads(instance.text)
@@ -25,7 +26,8 @@ data = {'status' :"""
 User accounts: {}
 User posts   : {}
 Active users : {}
-#3615computerstatus""".format(users,posts,active)}  # this is the body of the message
+Domains : {}        
+#3615computerstatus""".format(users,posts,active,domains)}  # this is the body of the message
 
 toot_url = "https://3615.computer/api/v1/statuses" # change the url here, too.
 post_toot = requests.post(toot_url,
