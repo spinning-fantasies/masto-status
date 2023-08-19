@@ -23,7 +23,7 @@ data = {
 
 User accounts: {}
 User posts   : {}
-Active users : {}
+Active users : {} / month
 Domains : {}        
 
 #3615computerstatus""".format(users,posts,active,domains)}  # this is the body of the message
