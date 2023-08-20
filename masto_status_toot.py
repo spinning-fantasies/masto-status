@@ -18,7 +18,7 @@ mastoversion = jsoninst['version']
 
 # add date !
 data = {
-    'visibility' : "unlisted",
+    'visibility' : "private",
     'status' :"""
 
 User accounts: {}
